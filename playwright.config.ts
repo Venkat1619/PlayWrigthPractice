@@ -2,8 +2,8 @@ import { defineConfig, devices } from '@playwright/test';
 
 
 export default defineConfig({
-  testDir: './tests',
-  testMatch: ["clickEvents.spec.ts"],
+  testDir: './POM_Tests',
+  testMatch: ["pom.spec.ts"],
   timeout: 30 * 1000,
   expect: {
     
@@ -19,7 +19,8 @@ export default defineConfig({
     headless:false,
     screenshot:"on",
     video:"on",
-    baseURL:"https://ecommerce-playground.lambdatest.io/index.php?"
+    // baseURL:"https://opensource-demo.orangehrmlive.com/web/index.php/",
+    baseURL:"https://www.saucedemo.com/"
   },
 
   projects: [
